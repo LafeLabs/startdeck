@@ -1108,6 +1108,9 @@ doTheThing(07);//initialize Geometron global variables
         <tr class = "viewButt" >
             <td>PUSH</td><td>JSON</td>
         </tr>    
+        <tr class = "viewButt" >
+            <td>IMPORT</td><td>JSON</td>
+        </tr>    
     </table>
     <canvas id = "canvas0630" class = "canvas06xx"></canvas>
     <textarea id = "textIO0630" class = "textIO06xx"></textarea>
@@ -1459,9 +1462,19 @@ function init0730(){
         height0630 = parseInt(inputs0630[5].value);
         tempx0 = x0;
         tempy0 = y0;
-
         x0 -= 0.5*(innerWidth - width0630);
         y0 -= 0.5*(innerHeight - height0630);
+        var jsonout = "{\n\"shapes\":[\n";
+        for(var index = 040;index < 01777;index++){
+            if(currentTableStart[index] != currentTable[index]){
+                jsonout += "    \"0" + index.toString(8) + ":" + currentTable[index] + "\",\n";
+            }
+        }
+        if(jsonout.substring(jsonout.length-2,jsonout.length) == ",\n"){
+            jsonout = jsonout.substring(0,jsonout.length - 2) + "\n";
+        }
+        jsonout += "],\n";
+        jsonout += "\"glyph\":\"";
         var fooGlyph = "";
         var barArray = currentGlyph.split(",");
         for(var index = 0;index < barArray.length;index++){
@@ -1469,8 +1482,17 @@ function init0730(){
                 fooGlyph += barArray[index] + ",";
             }
         }
+        jsonout += fooGlyph + "\",\n";
+        jsonout += "\"url\":\"http://www.lafelabs.org/startdeck/hello/\",\n";
+        jsonout += "\"raw\":\"https://raw.githubusercontent.com/LafeLabs/startdeck/master/hello/index.html\",\n";
+        jsonout += "\"w\":" + inputs0630[4].value + ",\n";
+        jsonout += "\"h\":" + inputs0630[5].value + ",\n";
+        jsonout += "\"x0\":" + (tempx0).toString() + ",\n";
+        jsonout += "\"y0\":" + (tempy0).toString() + ",\n";
+        jsonout += "\"unit\":" + unit.toString() + "\n}\n";
+
         currentSVG = "<svg width=\"" + width0630.toString() + "\" height=\"" + height0630.toString() + "\" viewbox = \"0 0 " + width0630.toString() + " " + height0630.toString() + "\"  xmlns=\"http://www.w3.org/2000/svg\">\n";
-        currentSVG += "<!--" + fooGlyph + "-->";
+        currentSVG += "\n<!--\n<json>\n" + jsonout + "\n</json>\n-->\n";
         ctx = document.getElementById("invisibleCanvas").getContext("2d");
         doTheThing(0300);
         drawGlyph(fooGlyph);
@@ -1557,7 +1579,26 @@ function init0730(){
         y0 = y0temp;
         unit = unittemp;
     }
-
+    buttons0630[8].onclick = function(){//IMPORT JSON        
+        var jsonin = JSON.parse(document.getElementById("textIO0630").value);
+        var inputStack = jsonin.shapes;
+        for(var index = 0;index < inputStack.length;index++){
+            var stackLine = inputStack[index].split(":");
+            var localAddress = parseInt(stackLine[0],8);
+            var localGlyph = stackLine[1];
+            currentTable[localAddress] = localGlyph;
+        }
+        currentTable[currentAddress] = jsonin.glyph;
+        unit = jsonin.unit;
+        width0630 = jsonin.w;
+        height0630 = jsonin.h;
+        inputs0630[4].value = width0630;
+        inputs0630[5].value = height0630;
+        x0 = jsonin.x0;
+        y0 = jsonin.y0;
+        currentGlyph = currentTable[currentAddress] + ",0207,";
+        redraw0730();
+    }
 
     function savePHPdata0466() {
         var httpc = new XMLHttpRequest();
