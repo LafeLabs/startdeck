@@ -21,7 +21,6 @@ http://www.lafelabs.org/startdeck/hello/
 QR Code image:
 http://www.lafelabs.org/startdeck/hello/qrcode.png
 
-
 this code:
 https://raw.githubusercontent.com/LafeLabs/startdeck/master/hello/index.html
 
@@ -1040,27 +1039,7 @@ doTheThing(07);//initialize Geometron global variables
         </tr>
 </table>
 
-<!--</page03>-->
-<!--<page0466>-->   
-<div id = "data0466" class = "json" style = "display:none;">
-        [
-        {
-            "shapes":[
-            "0236:0341,0333,0341,0336,",
-            "0237:0235,0236,0236,0236,0236,0236,0236,0236,",
-            "01236:0333,0200,0336,0330,0332,0236,0331,0331,0337,0337,",
-            "01237:0333,0200,0336,0332,0330,0337,0336,0332,0330,0237,0337,0337,0337,0337,0337,0337,0337,0332,0331,0331,0333,0337,"
-            ],
-            "glyph":"0236,0236,0236,0236,0236,0236,0236,",
-            "w":500,
-            "h":500,
-            "x0":250,
-            "y0":250,
-            "unit":100
-        }
-        ]
-</div>        
-<!--<page0466>-->                
+<!--</page03>-->             
 <!--<page0630>-->
 <div class = "page screenpage" id = "div0630">
         <canvas id = "invisibleCanvas" style = "display:none"></canvas>
@@ -1094,10 +1073,10 @@ doTheThing(07);//initialize Geometron global variables
             <td>BYTECODE</td><td>IMPORT</td>
         </tr>
         <tr class = "viewButt" >
-            <td>SAVE</td><td>SHAPETABLE</td>
+            <td></td><td></td>
         </tr>
         <tr class = "viewButt" >
-            <td>LOAD</td><td>SHAPETABLE</td>
+            <td></td><td></td>
         </tr>                
         <tr class = "viewButt" >
             <td>EXPORT</td><td>SVG</td>
@@ -1106,10 +1085,13 @@ doTheThing(07);//initialize Geometron global variables
             <td>EXPORT</td><td>JSON</td>
         </tr>
         <tr class = "viewButt" >
-            <td>PUSH</td><td>JSON</td>
+            <td></td><td></td>
         </tr>    
         <tr class = "viewButt" >
             <td>IMPORT</td><td>JSON</td>
+        </tr>    
+        <tr class = "viewButt" >
+            <td>SAVE</td><td>SVG</td>
         </tr>    
     </table>
     <canvas id = "canvas0630" class = "canvas06xx"></canvas>
@@ -1120,10 +1102,16 @@ doTheThing(07);//initialize Geometron global variables
 <!--<page0666>-->
 <div class = "page screenpage" id = "div0666">
     <div class = "feed" id = "feed0666">
-
     </div>
 </div> 
 <!--</page0666>-->
+<!--<page0600>-->
+<div class = "page screenpage" id = "div0666">
+    <div class = "feed" id = "feed0666">
+        <img src = "qrcode.png"/>
+    </div>
+</div> 
+<!--</page0600>-->    
 <!--<page0700>-->
 <script id = "script0700">
     pages = document.getElementsByClassName("page");
@@ -1174,9 +1162,8 @@ doTheThing(07);//initialize Geometron global variables
             table0600.style.display = "block";
             init0730();
         }
-        if(pages[currentPage].id == "div0660"){
+        if(pages[currentPage].id == "div0666"){
             table0600.style.display = "none";
-            init0760();
         }
         document.getElementById("pageNumber").innerHTML = "Page " + pages[currentPage].id.substring(3);
 
@@ -1448,23 +1435,56 @@ function init0730(){
         currentGlyph = currentTable[currentAddress] + ",0207,";
         redraw0730();
     }
-    
-    buttons0630[3].onclick = function(){//SAVE shape table
-        savePHP();
-    }
-    
-    buttons0630[4].onclick = function(){//LOAD shape table
-        loadPHP();
-    }
-    
+        
     buttons0630[5].onclick = function(){//Export SVG        
-        width0630 = parseInt(inputs0630[4].value);
+        exportSVG();
+    }
+    buttons0630[6].onclick = function(){//Export JSON        
+        var jsonout = getJSON();
+        document.getElementById("textIO0630").value = jsonout;
+
+    }
+
+    buttons0630[8].onclick = function(){//IMPORT JSON        
+        var jsonin = JSON.parse(document.getElementById("textIO0630").value);
+        var inputStack = jsonin.shapes;
+        for(var index = 0;index < inputStack.length;index++){
+            var stackLine = inputStack[index].split(":");
+            var localAddress = parseInt(stackLine[0],8);
+            var localGlyph = stackLine[1];
+            currentTable[localAddress] = localGlyph;
+        }
+        currentTable[currentAddress] = jsonin.glyph;
+        unit = jsonin.unit;
+        width0630 = jsonin.w;
+        height0630 = jsonin.h;
+        inputs0630[4].value = width0630;
+        inputs0630[5].value = height0630;
+        x0 = jsonin.x0;
+        y0 = jsonin.y0;
+        currentGlyph = currentTable[currentAddress] + ",0207,";
+        redraw0730();
+    }
+
+    buttons0630[9].onclick = function(){//SAVE SVG FROM TEXTIO, after exporting svg into TEXTIO
+        var httpc = new XMLHttpRequest();
+        var url = "savesvg.php";        
+        httpc.open("POST", url, true);
+        httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        exportSVG();//put the text of the svg code in textio
+        httpc.send("svg=" + document.getElementById("textIO0630").value);//send it along
+
+    }        
+
+function exportSVG(){
+    width0630 = parseInt(inputs0630[4].value);
         height0630 = parseInt(inputs0630[5].value);
         tempx0 = x0;
         tempy0 = y0;
         x0 -= 0.5*(innerWidth - width0630);
         y0 -= 0.5*(innerHeight - height0630);
         var jsonout = "{\n\"shapes\":[\n";
+
         for(var index = 040;index < 01777;index++){
             if(currentTableStart[index] != currentTable[index]){
                 jsonout += "    \"0" + index.toString(8) + ":" + currentTable[index] + "\",\n";
@@ -1500,213 +1520,74 @@ function init0730(){
         document.getElementById("textIO0630").value = currentSVG;
         x0 = tempx0;
         y0 = tempy0;
-    }
-    buttons0630[6].onclick = function(){//Export JSON        
-        var jsonout = "{\n\"shapes\":[\n";
-        for(var index = 040;index < 01777;index++){
-            if(currentTableStart[index] != currentTable[index]){
-                jsonout += "    \"0" + index.toString(8) + ":" + currentTable[index] + "\",\n";
-            }
-        }
-        if(jsonout.substring(jsonout.length-2,jsonout.length) == ",\n"){
-            jsonout = jsonout.substring(0,jsonout.length - 2) + "\n";
-        }
-        jsonout += "],\n";
-        jsonout += "\"glyph\":\"";
-        var fooGlyph = "";
-        var barArray = currentGlyph.split(",");
-        for(var index = 0;index < barArray.length;index++){
-            if(barArray[index] != "0207" && barArray[index].length > 0){
-                fooGlyph += barArray[index] + ",";
-            }
-        }
-        jsonout += fooGlyph + "\",\n";
-        jsonout += "\"w\":" + inputs0630[4].value + ",\n";
-        jsonout += "\"h\":" + inputs0630[5].value + ",\n";
-        jsonout += "\"x0\":" + (x0 - 0.5*(innerWidth - width0630)).toString() + ",\n";
-        jsonout += "\"y0\":" + (y0 - 0.5*(innerHeight - height0630)).toString() + ",\n";
-        jsonout += "\"unit\":" + unit.toString() + "\n}\n";
-        document.getElementById("textIO0630").value = jsonout;
+}
 
+function getJSON(){
+    var jsonout = "{\n\"shapes\":[\n";
+    for(var index = 040;index < 01777;index++){
+        if(currentTableStart[index] != currentTable[index]){
+            jsonout += "    \"0" + index.toString(8) + ":" + currentTable[index] + "\",\n";
+        }
     }
-    buttons0630[7].onclick = function(){//Push JSON        
-        jsonout = "{\n\"shapes\":[\n";
-        for(var index = 040;index < 01777;index++){
-            if(currentTableStart[index] != currentTable[index]){
-                jsonout += "    \"0" + index.toString(8) + ":" + currentTable[index] + "\",\n";
-            }
+    if(jsonout.substring(jsonout.length-2,jsonout.length) == ",\n"){
+        jsonout = jsonout.substring(0,jsonout.length - 2) + "\n";
+    }
+    jsonout += "],\n";
+    jsonout += "\"glyph\":\"";
+    var fooGlyph = "";
+    var barArray = currentGlyph.split(",");
+    for(var index = 0;index < barArray.length;index++){
+        if(barArray[index] != "0207" && barArray[index].length > 0){
+            fooGlyph += barArray[index] + ",";
         }
-        if(jsonout.substring(jsonout.length-2,jsonout.length) == ",\n"){
-            jsonout = jsonout.substring(0,jsonout.length - 2) + "\n";
-        }
-        jsonout += "],\n";
-        jsonout += "\"glyph\":\"";
-        var fooGlyph = "";
-        var barArray = currentGlyph.split(",");
-        for(var index = 0;index < barArray.length;index++){
-            if(barArray[index] != "0207" && barArray[index].length > 0){
-                fooGlyph += barArray[index] + ",";
-            }
-        }
-        jsonout += fooGlyph + "\",\n";
-        jsonout += "\"w\":" + inputs0630[4].value + ",\n";
-        jsonout += "\"h\":" + inputs0630[5].value + ",\n";
-        jsonout += "\"x0\":" + (x0 - 0.5*(innerWidth - width0630)).toString() + ",\n";
-        jsonout += "\"y0\":" + (y0 - 0.5*(innerHeight - height0630)).toString() + ",\n";
-        jsonout += "\"unit\":" + unit.toString() + "\n}";
-        var jsonoutjson = JSON.parse(jsonout);
-        data0466.push(jsonoutjson);
+    }
+    jsonout += fooGlyph + "\",\n";
+    jsonout += "\"url\":\"http://www.lafelabs.org/startdeck/hello/\",\n";
+    jsonout += "\"raw\":\"https://raw.githubusercontent.com/LafeLabs/startdeck/master/hello/index.html\",\n";
+    jsonout += "\"w\":" + inputs0630[4].value + ",\n";
+    jsonout += "\"h\":" + inputs0630[5].value + ",\n";
+    jsonout += "\"x0\":" + (x0).toString() + ",\n";
+    jsonout += "\"y0\":" + (y0).toString() + ",\n";
+    jsonout += "\"unit\":" + unit.toString() + "\n}\n";
+    return jsonout;
 
-        var newp  = document.createElement("P");
-        document.getElementById("feed0666").appendChild(newp);            
-        var newcan  = document.createElement("CANVAS");
-        newcan.width = data0466[data0466.length - 1].w;
-        newcan.height = data0466[data0466.length - 1].h;
-        newcan.style.border = "solid";
-        document.getElementById("feed0666").appendChild(newcan);
-        ctx = newcan.getContext("2d");
-        ctx.clearRect(0,0,data0466[data0466.length - 1].w,data0466[data0466.length - 1].h);
-        x0temp = x0;
-        y0temp = y0;
-        unittemp = unit;
-        x0 = data0466[data0466.length - 1].x0;
-        y0 = data0466[data0466.length - 1].y0;
-        unit = data0466[data0466.length - 1].unit;
-        doTheThing(0300);
-        drawGlyph(data0466[data0466.length - 1].glyph);
-        savePHPdata0466();
-        x0 = x0temp;
-        y0 = y0temp;
-        unit = unittemp;
-    }
-    buttons0630[8].onclick = function(){//IMPORT JSON        
-        var jsonin = JSON.parse(document.getElementById("textIO0630").value);
-        var inputStack = jsonin.shapes;
-        for(var index = 0;index < inputStack.length;index++){
-            var stackLine = inputStack[index].split(":");
-            var localAddress = parseInt(stackLine[0],8);
-            var localGlyph = stackLine[1];
-            currentTable[localAddress] = localGlyph;
-        }
-        currentTable[currentAddress] = jsonin.glyph;
-        unit = jsonin.unit;
-        width0630 = jsonin.w;
-        height0630 = jsonin.h;
-        inputs0630[4].value = width0630;
-        inputs0630[5].value = height0630;
-        x0 = jsonin.x0;
-        y0 = jsonin.y0;
-        currentGlyph = currentTable[currentAddress] + ",0207,";
-        redraw0730();
-    }
+}
 
-    function savePHPdata0466() {
-        var httpc = new XMLHttpRequest();
-        var url = "saver0466.php";        
-        httpc.open("POST", url, true);
-        httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        httpc.send("data0466=" + jsonout);
-    }
-
-    function savePHP() {
-        var httpc = new XMLHttpRequest();
-        var url = "saver.php";
-        hypercube = "";
-        for(var index = 040;index < 0300;index++){
-            hypercube += "0" + index.toString(8) + ":" +  currentTable[index] + "\n";
-        }
-        for(var index = 01040;index < 01300;index++){
-            hypercube += "0" + index.toString(8) + ":" +  currentTable[index] + "\n";
-        }
-        httpc.open("POST", url, true);
-        httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        httpc.send("hypercube=" + hypercube);
-    }
-    
-    function loadPHP(){
-        var httpc = new XMLHttpRequest();
-        httpc.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                var instring = this.responseText;
-                var inarray = instring.split("\n");
-                for(var index = 0;index < inarray.length;index++){
-                    if(inarray[index].split(":").length > 1){
-                        var locala = parseInt(inarray[index].split(":")[0],8);
-                        currentTable[locala] = inarray[index].split(":")[1];
-                    }
-                }
-            }
-        };
-        httpc.open("GET", "data.txt", true);
-        httpc.send();
-    }
-                    
 </script>
 <!--</page0730>-->  
 <!--<page0766>-->  
 <script>
-//    data0466 = JSON.parse(document.getElementById("data0466").innerHTML);
 
-    var httpc = new XMLHttpRequest();
-    httpc.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            var instring = this.responseText;
-            data0466 = JSON.parse("["+instring + "]");
-            for(var index = 0;index < data0466.length;index++){ 
-                for(var shapeindex = 0;shapeindex < data0466[index].shapes.length;shapeindex++){
-                    var localAddr = parseInt(data0466[index].shapes[shapeindex].split(":")[0],8);
-                    currentTable[localAddr] = data0466[index].shapes[shapeindex].split(":")[1];
-                }   
-                var newp  = document.createElement("P");
-                document.getElementById("feed0666").appendChild(newp);           
-                var newcan  = document.createElement("CANVAS");
-                newcan.width = data0466[index].w;
-                newcan.height = data0466[index].h;
-                newcan.style.border = "solid";
-                document.getElementById("feed0666").appendChild(newcan);
-                ctx = newcan.getContext("2d");
-                ctx.clearRect(0,0,data0466[index].w,data0466[index].h);
-                x0 = data0466[index].x0;
-                y0 = data0466[index].y0;
-                unit = data0466[index].unit;
-                doTheThing(0300);
-                drawGlyph(data0466[index].glyph);      
-                currentTable = []; 
-                for(var index = 0;index < 01777;index ++){
-                    currentTable.push("");
-                }
-                var inputbytecode = document.getElementById("bytecodeScript").text;
-                var bytecodearray = inputbytecode.split("\n");
-                for(var index = 0;index < bytecodearray.length;index++){
-                    if(bytecodearray[index].includes(":")){
-                        var localBytecode = bytecodearray[index].split(":");
-                        var localAddress = parseInt(localBytecode[0],8);
-                        currentTable[localAddress] = localBytecode[1];
-                    }
-                }
-                init0730();  
-            }
-        }
-    };
-    httpc.open("GET", "data0466.txt", true);
-    httpc.send();
+var httpc = new XMLHttpRequest();
+httpc.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        var instring = this.responseText;//feed.txt, a list of locations of svg files, separated by "\n"
+        var filenames = instring.split("\n");
+        for(var index = 0;index < filenames.length;index++){
+            var newimg = document.createElement("IMG");
+            newimg.style.border = "solid";
+            document.getElementById("feed0666").appendChild(newimg);
+            newimg.src = "svg/" + filenames[index];
+            var newp = document.createElement("P");
+            var newa = document.createElement("A");
+            newa.innerHTML = filenames[index];
+            newa.href = "http://www.lafelabs.org/startdeck/hello/svg/" + filenames[index];
+            newp.appendChild(newa);
+            document.getElementById("feed0666").appendChild(newp);
+            var textfile = filenames[index].substring(0,filenames[index].length - 3) + "txt";
+            var newp = document.createElement("P");
+            var newa = document.createElement("A");
+            newa.innerHTML = textfile;
+            newa.href = "http://www.lafelabs.org/startdeck/hello/svg/" + textfile;
+            newp.appendChild(newa);
+            document.getElementById("feed0666").appendChild(newp);
 
-    currentTable = []; 
-    for(var index = 0;index < 01777;index ++){
-        currentTable.push("");
-    }
-    var inputbytecode = document.getElementById("bytecodeScript").text;
-    var bytecodearray = inputbytecode.split("\n");
-    for(var index = 0;index < bytecodearray.length;index++){
-        if(bytecodearray[index].includes(":")){
-            var localBytecode = bytecodearray[index].split(":");
-            var localAddress = parseInt(localBytecode[0],8);
-            currentTable[localAddress] = localBytecode[1];
+
         }
     }
-
-
-
+}
+httpc.open("GET", "feed.txt", true);
+httpc.send();
 </script>
 <!--</page0766>-->  
 <!--<page0500>-->
@@ -1849,13 +1730,10 @@ table{
     .feed{
         overflow:scroll;
         position:absolute;
-        left:5px;
-        right:5px;
-        bottom:5px;
-        top:50px;
-        border:solid;
-        border-color:red;
-        border-radius:10px;
+        left:0px;
+        right:0px;
+        bottom:0px;
+        top:0px;
         text-align:center;
     }
 </style>
