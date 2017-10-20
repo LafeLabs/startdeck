@@ -6,7 +6,8 @@
         httpc.open("POST", url, true);
         httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         httpc.send("svg=" + document.getElementById("textIO0630").value);
-*/
+
+        */
 
    $str = $_POST["svg"]; //get svg data from index.html
    
@@ -28,14 +29,5 @@
    $str = $olddata."\n".$filename;//append a "newline" to string representing contents of feed.txt file ,then append new filename
    fwrite($file,$str);//write string to file
    fclose($file);//close file
-
-   $file = fopen("textfeed.txt","r"); //open the feed.txt file which contains a list of all files in /svg/ directory
-   $olddata = fread($file,filesize("textfeed.txt")); //read contents of existing file list
-   fclose($file);//close the file because computers are insane
-   $file = fopen("textfeed.txt","w");   //re-open file, I have no idea why this fixed a mysterious bug
-   $str = $olddata."\n".$txtfilename;//append a "newline" to string representing contents of feed.txt file ,then append new filename
-   fwrite($file,$str);//write string to file
-   fclose($file);//close file
-
 
 ?>
