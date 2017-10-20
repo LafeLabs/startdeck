@@ -1529,6 +1529,10 @@ function init0730(){
         y0 = jsonin.y0;
         currentGlyph = currentTable[currentAddress] + ",0207,";
         inputs0630[6].value  = jsonin.imgurl;        
+        inputs0630[7].value  = jsonin.imgw;        
+        inputs0630[8].value  = jsonin.left;        
+        inputs0630[9].value  = jsonin.top;        
+
         document.getElementById("img0630").src = jsonin.imgurl;
 
         redraw0730();
@@ -1577,12 +1581,12 @@ function exportSVG(){
         jsonout += "\"h\":" + inputs0630[5].value + ",\n";
         jsonout += "\"x0\":" + (tempx0).toString() + ",\n";
         jsonout += "\"y0\":" + (tempy0).toString() + ",\n";
-        jsonout += "\"unit\":" + unit.toString() + "\n}\n";
-        jsonout += "\"imgurl\":" + inputs0630[6].value + ",\n";
+        jsonout += "\"unit\":" + unit.toString() + ",\n";
+        jsonout += "\"imgurl\":\"" + inputs0630[6].value + "\",\n";
         jsonout += "\"imgw\":" + inputs0630[7].value + ",\n";
         jsonout += "\"left\":" + inputs0630[8].value + ",\n";
-        jsonout += "\"top\":" + inputs0630[9].value + ",\n";
-
+        jsonout += "\"top\":" + inputs0630[9].value + "\n}\n";
+    
         currentSVG = "<svg width=\"" + width0630.toString() + "\" height=\"" + height0630.toString() + "\" viewbox = \"0 0 " + width0630.toString() + " " + height0630.toString() + "\"  xmlns=\"http://www.w3.org/2000/svg\">\n";
         currentSVG += "\n<!--\n<json>\n" + jsonout + "\n</json>\n-->\n";
         ctx = document.getElementById("invisibleCanvas").getContext("2d");
@@ -1620,11 +1624,11 @@ function getJSON(){
     jsonout += "\"h\":" + inputs0630[5].value + ",\n";
     jsonout += "\"x0\":" + (x0).toString() + ",\n";
     jsonout += "\"y0\":" + (y0).toString() + ",\n";
-    jsonout += "\"unit\":" + unit.toString() + "\n}\n";
-    jsonout += "\"imgurl\":" + inputs0630[6].value + ",\n";
+    jsonout += "\"unit\":" + unit.toString() + ",\n";
+    jsonout += "\"imgurl\":\"" + inputs0630[6].value + "\",\n";
     jsonout += "\"imgw\":" + inputs0630[7].value + ",\n";
     jsonout += "\"left\":" + inputs0630[8].value + ",\n";
-    jsonout += "\"top\":" + inputs0630[9].value + ",\n";
+    jsonout += "\"top\":" + inputs0630[9].value + "\n}\n";
 
     return jsonout;
 
