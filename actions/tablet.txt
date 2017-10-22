@@ -1,0 +1,419 @@
+<svg width="500" height="500" viewbox = "0 0 500 500"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+"shapes":[
+    "0250:0336,0332,0332,0332,0332,0330,0330,0330,0330,0332,0211,0336,0336,0331,0331,0333,0333,0331,0332,0337,0337,01300,0333,0333,0333,01304,01305,01306,0333,0332,0332,0332,0332,0332,0332,0332,0332,0331,01310,01311,01312,01313,01314,01315,01316,01317,0332,0332,0332,0332,0332,0332,0332,0332,0331,01320,01321,01322,01323,01324,01325,01326,01327,0332,0332,0332,0332,0332,0332,0332,0332,0331,0320,01330,01331,01332,01333,01334,01335,01336,01337,0332,0332,0332,0332,0332,0332,0332,0332,0331,01340,01341,01342,01343,01344,01345,01346,01347,0332,0332,0332,0332,0332,0332,0332,0332,0331,01350,01351,01352,01353,0333,0333,0333,0333,0332,0332,0332,0332,0332,0332,0332,0332,0331,0333,0333,01362,01363,01364,01365,01366,01367,0332,0332,0332,0332,0332,0332,0332,0332,0331,0333,0333,0333,0333,0333,0333,0333,0333,0333,0333,"
+],
+"glyph":"0336,0332,0332,0332,0332,0330,0330,0330,0330,0332,0211,0336,0336,0331,0331,0333,0333,0331,0332,0337,0337,01300,0333,0333,0333,01304,01305,01306,0333,0332,0332,0332,0332,0332,0332,0332,0332,0331,01310,01311,01312,01313,01314,01315,01316,01317,0332,0332,0332,0332,0332,0332,0332,0332,0331,01320,01321,01322,01323,01324,01325,01326,01327,0332,0332,0332,0332,0332,0332,0332,0332,0331,0320,01330,01331,01332,01333,01334,01335,01336,01337,0332,0332,0332,0332,0332,0332,0332,0332,0331,01340,01341,01342,01343,01344,01345,01346,01347,0332,0332,0332,0332,0332,0332,0332,0332,0331,01350,01351,01352,01353,0333,0333,0333,0333,0332,0332,0332,0332,0332,0332,0332,0332,0331,0333,0333,01362,01363,01364,01365,01366,01367,0332,0332,0332,0332,0332,0332,0332,0332,0331,0333,0333,0333,0333,0333,0333,0333,0333,0333,0333,",
+"url":"http://www.lafelabs.org/startdeck/hello/",
+"raw":"https://raw.githubusercontent.com/LafeLabs/startdeck/master/hello/index.html",
+"w":500,
+"h":500,
+"x0":682.5,
+"y0":336,
+"unit":100,
+"imgurl":"",
+"imgw":2,
+"left":-1,
+"top":-1
+}
+
+</json>
+-->
+    <line x1="72" y1="93" x2="72" y2="36" style="stroke:black;stroke-width:2" />
+    <line x1="72" y1="36" x2="14" y2="36" style="stroke:black;stroke-width:2" />
+    <line x1="14" y1="36" x2="14" y2="93" style="stroke:black;stroke-width:2" />
+    <line x1="14" y1="93" x2="72" y2="93" style="stroke:black;stroke-width:2" />
+<circle cx="43" cy = "64" r = "3" stroke = "black" stroke-width = "2" fill = "black" />
+    <line x1="53" y1="54" x2="63" y2="44" style="stroke:black;stroke-width:2" />
+    <line x1="23" y1="85" x2="33" y2="74" style="stroke:black;stroke-width:2" />
+    <line x1="23" y1="44" x2="33" y2="54" style="stroke:black;stroke-width:2" />
+    <line x1="53" y1="74" x2="63" y2="85" style="stroke:black;stroke-width:2" />
+    <line x1="300" y1="93" x2="300" y2="36" style="stroke:black;stroke-width:2" />
+    <line x1="300" y1="36" x2="243" y2="36" style="stroke:black;stroke-width:2" />
+    <line x1="243" y1="36" x2="243" y2="93" style="stroke:black;stroke-width:2" />
+    <line x1="243" y1="93" x2="300" y2="93" style="stroke:black;stroke-width:2" />
+    <circle cx="272" cy = "64" r = "28.603070140884213" stroke = "black" stroke-width = "2" fill = "none" />
+    <line x1="272" y1="64" x2="272" y2="36" style="stroke:black;stroke-width:2" />
+    <line x1="272" y1="64" x2="300" y2="64" style="stroke:black;stroke-width:2" />
+    <line x1="272" y1="64" x2="272" y2="93" style="stroke:black;stroke-width:2" />
+    <line x1="272" y1="64" x2="243" y2="64" style="stroke:black;stroke-width:2" />
+    <circle cx="262" cy = "54" r = "7.150767535221053" stroke = "black" stroke-width = "2" fill = "none" />
+    <circle cx="282" cy = "54" r = "7.150767535221053" stroke = "black" stroke-width = "2" fill = "none" />
+    <circle cx="282" cy = "74" r = "7.150767535221053" stroke = "black" stroke-width = "2" fill = "none" />
+    <circle cx="262" cy = "74" r = "7.150767535221053" stroke = "black" stroke-width = "2" fill = "none" />
+    <line x1="358" y1="93" x2="358" y2="36" style="stroke:black;stroke-width:2" />
+    <line x1="358" y1="36" x2="300" y2="36" style="stroke:black;stroke-width:2" />
+    <line x1="300" y1="36" x2="300" y2="93" style="stroke:black;stroke-width:2" />
+    <line x1="300" y1="93" x2="358" y2="93" style="stroke:black;stroke-width:2" />
+    <line x1="329" y1="64" x2="329" y2="36" style="stroke:black;stroke-width:2" />
+    <line x1="329" y1="64" x2="356" y2="55" style="stroke:black;stroke-width:2" />
+    <line x1="329" y1="64" x2="346" y2="87" style="stroke:black;stroke-width:2" />
+    <line x1="329" y1="64" x2="312" y2="87" style="stroke:black;stroke-width:2" />
+    <line x1="329" y1="64" x2="302" y2="55" style="stroke:black;stroke-width:2" />
+    <circle cx="329" cy = "64" r = "28.603070140884213" stroke = "black" stroke-width = "2" fill = "none" />
+    <circle cx="337" cy = "53" r = "3.5753837676105267" stroke = "black" stroke-width = "2" fill = "none" />
+    <circle cx="343" cy = "69" r = "3.5753837676105267" stroke = "black" stroke-width = "2" fill = "none" />
+    <circle cx="329" cy = "79" r = "3.5753837676105267" stroke = "black" stroke-width = "2" fill = "none" />
+    <circle cx="315" cy = "69" r = "3.5753837676105267" stroke = "black" stroke-width = "2" fill = "none" />
+    <circle cx="321" cy = "53" r = "3.5753837676105267" stroke = "black" stroke-width = "2" fill = "none" />
+    <line x1="415" y1="93" x2="415" y2="36" style="stroke:black;stroke-width:2" />
+    <line x1="415" y1="36" x2="358" y2="36" style="stroke:black;stroke-width:2" />
+    <line x1="358" y1="36" x2="358" y2="93" style="stroke:black;stroke-width:2" />
+    <line x1="358" y1="93" x2="415" y2="93" style="stroke:black;stroke-width:2" />
+    <line x1="386" y1="64" x2="386" y2="36" style="stroke:black;stroke-width:2" />
+    <line x1="386" y1="64" x2="411" y2="50" style="stroke:black;stroke-width:2" />
+    <line x1="386" y1="64" x2="411" y2="79" style="stroke:black;stroke-width:2" />
+    <line x1="386" y1="64" x2="386" y2="93" style="stroke:black;stroke-width:2" />
+    <line x1="386" y1="64" x2="361" y2="79" style="stroke:black;stroke-width:2" />
+    <circle cx="386" cy = "64" r = "28.603070140884213" stroke = "black" stroke-width = "2" fill = "none" />
+    <circle cx="379" cy = "52" r = "3.5753837676105267" stroke = "black" stroke-width = "2" fill = "none" />
+    <circle cx="393" cy = "52" r = "3.5753837676105267" stroke = "black" stroke-width = "2" fill = "none" />
+    <circle cx="400" cy = "64" r = "3.5753837676105267" stroke = "black" stroke-width = "2" fill = "none" />
+    <circle cx="393" cy = "77" r = "3.5753837676105267" stroke = "black" stroke-width = "2" fill = "none" />
+    <circle cx="379" cy = "77" r = "3.5753837676105267" stroke = "black" stroke-width = "2" fill = "none" />
+    <line x1="386" y1="64" x2="361" y2="50" style="stroke:black;stroke-width:2" />
+    <circle cx="372" cy = "64" r = "3.5753837676105267" stroke = "black" stroke-width = "2" fill = "none" />
+    <line x1="72" y1="150" x2="72" y2="93" style="stroke:black;stroke-width:2" />
+    <line x1="72" y1="93" x2="14" y2="93" style="stroke:black;stroke-width:2" />
+    <line x1="14" y1="93" x2="14" y2="150" style="stroke:black;stroke-width:2" />
+    <line x1="14" y1="150" x2="72" y2="150" style="stroke:black;stroke-width:2" />
+    <line x1="43" y1="150" x2="72" y2="122" style="stroke:black;stroke-width:2" />
+    <line x1="72" y1="122" x2="43" y2="93" style="stroke:black;stroke-width:2" />
+    <line x1="43" y1="93" x2="14" y2="122" style="stroke:black;stroke-width:2" />
+    <line x1="14" y1="122" x2="43" y2="150" style="stroke:black;stroke-width:2" />
+    <line x1="72" y1="150" x2="129" y2="150" style="stroke:black;stroke-width:2" />
+    <line x1="72" y1="150" x2="100" y2="62" style="stroke:black;stroke-width:2" />
+    <line x1="129" y1="150" x2="100" y2="62" style="stroke:black;stroke-width:2" />
+    <line x1="129" y1="150" x2="129" y2="93" style="stroke:black;stroke-width:2" />
+    <line x1="129" y1="93" x2="72" y2="93" style="stroke:black;stroke-width:2" />
+    <line x1="72" y1="93" x2="72" y2="150" style="stroke:black;stroke-width:2" />
+    <line x1="72" y1="150" x2="129" y2="150" style="stroke:black;stroke-width:2" />
+    <line x1="129" y1="150" x2="82" y2="116" style="stroke:black;stroke-width:2" />
+    <line x1="82" y1="116" x2="111" y2="96" style="stroke:black;stroke-width:2" />
+    <line x1="111" y1="96" x2="93" y2="83" style="stroke:black;stroke-width:2" />
+    <line x1="186" y1="150" x2="186" y2="93" style="stroke:black;stroke-width:2" />
+    <line x1="186" y1="93" x2="129" y2="93" style="stroke:black;stroke-width:2" />
+    <line x1="129" y1="93" x2="129" y2="150" style="stroke:black;stroke-width:2" />
+    <line x1="129" y1="150" x2="186" y2="150" style="stroke:black;stroke-width:2" />
+    <line x1="186" y1="150" x2="157" y2="101" style="stroke:black;stroke-width:2" />
+    <line x1="157" y1="101" x2="129" y2="150" style="stroke:black;stroke-width:2" />
+    <line x1="157" y1="101" x2="157" y2="150" style="stroke:black;stroke-width:2" />
+    <line x1="157" y1="150" x2="179" y2="138" style="stroke:black;stroke-width:2" />
+    <line x1="243" y1="150" x2="243" y2="93" style="stroke:black;stroke-width:2" />
+    <line x1="243" y1="93" x2="186" y2="93" style="stroke:black;stroke-width:2" />
+    <line x1="186" y1="93" x2="186" y2="150" style="stroke:black;stroke-width:2" />
+    <line x1="186" y1="150" x2="243" y2="150" style="stroke:black;stroke-width:2" />
+    <line x1="215" y1="136" x2="215" y2="122" style="stroke:black;stroke-width:2" />
+    <line x1="215" y1="136" x2="200" y2="136" style="stroke:black;stroke-width:2" />
+    <line x1="200" y1="136" x2="200" y2="122" style="stroke:black;stroke-width:2" />
+    <line x1="200" y1="122" x2="215" y2="122" style="stroke:black;stroke-width:2" />
+    <line x1="215" y1="122" x2="229" y2="122" style="stroke:black;stroke-width:2" />
+    <line x1="229" y1="122" x2="229" y2="136" style="stroke:black;stroke-width:2" />
+    <line x1="229" y1="136" x2="215" y2="136" style="stroke:black;stroke-width:2" />
+    <line x1="300" y1="150" x2="300" y2="93" style="stroke:black;stroke-width:2" />
+    <line x1="300" y1="93" x2="243" y2="93" style="stroke:black;stroke-width:2" />
+    <line x1="243" y1="93" x2="243" y2="150" style="stroke:black;stroke-width:2" />
+    <line x1="243" y1="150" x2="300" y2="150" style="stroke:black;stroke-width:2" />
+    <line x1="262" y1="131" x2="262" y2="112" style="stroke:black;stroke-width:2" />
+    <line x1="262" y1="112" x2="243" y2="112" style="stroke:black;stroke-width:2" />
+    <line x1="243" y1="112" x2="243" y2="131" style="stroke:black;stroke-width:2" />
+    <line x1="243" y1="131" x2="262" y2="131" style="stroke:black;stroke-width:2" />
+    <line x1="281" y1="131" x2="281" y2="112" style="stroke:black;stroke-width:2" />
+    <line x1="281" y1="112" x2="262" y2="112" style="stroke:black;stroke-width:2" />
+    <line x1="262" y1="112" x2="262" y2="131" style="stroke:black;stroke-width:2" />
+    <line x1="262" y1="131" x2="281" y2="131" style="stroke:black;stroke-width:2" />
+    <line x1="300" y1="131" x2="300" y2="112" style="stroke:black;stroke-width:2" />
+    <line x1="300" y1="112" x2="281" y2="112" style="stroke:black;stroke-width:2" />
+    <line x1="281" y1="112" x2="281" y2="131" style="stroke:black;stroke-width:2" />
+    <line x1="281" y1="131" x2="300" y2="131" style="stroke:black;stroke-width:2" />
+    <line x1="358" y1="150" x2="358" y2="93" style="stroke:black;stroke-width:2" />
+    <line x1="358" y1="93" x2="300" y2="93" style="stroke:black;stroke-width:2" />
+    <line x1="300" y1="93" x2="300" y2="150" style="stroke:black;stroke-width:2" />
+    <line x1="300" y1="150" x2="358" y2="150" style="stroke:black;stroke-width:2" />
+    <circle cx="329" cy = "122" r = "28.603070140884206" stroke = "black" stroke-width = "2" fill = "none" />
+    <line x1="329" y1="122" x2="358" y2="122" style="stroke:black;stroke-width:2" />
+    <line x1="329" y1="122" x2="300" y2="122" style="stroke:black;stroke-width:2" />
+    <line x1="415" y1="150" x2="415" y2="93" style="stroke:black;stroke-width:2" />
+    <line x1="415" y1="93" x2="358" y2="93" style="stroke:black;stroke-width:2" />
+    <line x1="358" y1="93" x2="358" y2="150" style="stroke:black;stroke-width:2" />
+    <line x1="358" y1="150" x2="415" y2="150" style="stroke:black;stroke-width:2" />
+    <circle cx="372" cy = "136" r = "7.150767535221052" stroke = "black" stroke-width = "2" fill = "none" />
+    <circle cx="372" cy = "107" r = "7.150767535221052" stroke = "black" stroke-width = "2" fill = "none" />
+    <circle cx="386" cy = "122" r = "7.150767535221052" stroke = "black" stroke-width = "2" fill = "none" />
+    <circle cx="400" cy = "107" r = "7.150767535221052" stroke = "black" stroke-width = "2" fill = "none" />
+    <circle cx="400" cy = "136" r = "7.150767535221052" stroke = "black" stroke-width = "2" fill = "none" />
+    <line x1="472" y1="150" x2="472" y2="93" style="stroke:black;stroke-width:2" />
+    <line x1="472" y1="93" x2="415" y2="93" style="stroke:black;stroke-width:2" />
+    <line x1="415" y1="93" x2="415" y2="150" style="stroke:black;stroke-width:2" />
+    <line x1="415" y1="150" x2="472" y2="150" style="stroke:black;stroke-width:2" />
+    <line x1="465" y1="129" x2="465" y2="114" style="stroke:black;stroke-width:2" />
+    <line x1="465" y1="122" x2="436" y2="122" style="stroke:black;stroke-width:2" />
+    <line x1="436" y1="122" x2="422" y2="122" style="stroke:black;stroke-width:2" />
+    <line x1="422" y1="122" x2="422" y2="114" style="stroke:black;stroke-width:2" />
+    <line x1="422" y1="129" x2="422" y2="122" style="stroke:black;stroke-width:2" />
+    <line x1="72" y1="207" x2="72" y2="150" style="stroke:black;stroke-width:2" />
+    <line x1="72" y1="150" x2="14" y2="150" style="stroke:black;stroke-width:2" />
+    <line x1="14" y1="150" x2="14" y2="207" style="stroke:black;stroke-width:2" />
+    <line x1="14" y1="207" x2="72" y2="207" style="stroke:black;stroke-width:2" />
+	<path d = "M57 193 L57 164 L29 164 L29 193 L57 193 Z" stroke = "black" stroke-width = "2" fill = "black" />    <line x1="129" y1="207" x2="129" y2="150" style="stroke:black;stroke-width:2" />
+    <line x1="129" y1="150" x2="72" y2="150" style="stroke:black;stroke-width:2" />
+    <line x1="72" y1="150" x2="72" y2="207" style="stroke:black;stroke-width:2" />
+    <line x1="72" y1="207" x2="129" y2="207" style="stroke:black;stroke-width:2" />
+	<path d = "M114 193 L114 164 L86 164 L86 193 L114 193 Z" stroke = "white" stroke-width = "2" fill = "white" />    <line x1="186" y1="207" x2="186" y2="150" style="stroke:white;stroke-width:2" />
+    <line x1="186" y1="150" x2="129" y2="150" style="stroke:white;stroke-width:2" />
+    <line x1="129" y1="150" x2="129" y2="207" style="stroke:white;stroke-width:2" />
+    <line x1="129" y1="207" x2="186" y2="207" style="stroke:white;stroke-width:2" />
+	<path d = "M172 193 L172 164 L143 164 L143 193 L172 193 Z" stroke = "red" stroke-width = "2" fill = "red" />    <line x1="243" y1="207" x2="243" y2="150" style="stroke:red;stroke-width:2" />
+    <line x1="243" y1="150" x2="186" y2="150" style="stroke:red;stroke-width:2" />
+    <line x1="186" y1="150" x2="186" y2="207" style="stroke:red;stroke-width:2" />
+    <line x1="186" y1="207" x2="243" y2="207" style="stroke:red;stroke-width:2" />
+	<path d = "M229 193 L229 164 L200 164 L200 193 L229 193 Z" stroke = "orange" stroke-width = "2" fill = "orange" />    <line x1="300" y1="207" x2="300" y2="150" style="stroke:orange;stroke-width:2" />
+    <line x1="300" y1="150" x2="243" y2="150" style="stroke:orange;stroke-width:2" />
+    <line x1="243" y1="150" x2="243" y2="207" style="stroke:orange;stroke-width:2" />
+    <line x1="243" y1="207" x2="300" y2="207" style="stroke:orange;stroke-width:2" />
+	<path d = "M286 193 L286 164 L257 164 L257 193 L286 193 Z" stroke = "yellow" stroke-width = "2" fill = "yellow" />    <line x1="358" y1="207" x2="358" y2="150" style="stroke:yellow;stroke-width:2" />
+    <line x1="358" y1="150" x2="300" y2="150" style="stroke:yellow;stroke-width:2" />
+    <line x1="300" y1="150" x2="300" y2="207" style="stroke:yellow;stroke-width:2" />
+    <line x1="300" y1="207" x2="358" y2="207" style="stroke:yellow;stroke-width:2" />
+	<path d = "M343 193 L343 164 L315 164 L315 193 L343 193 Z" stroke = "green" stroke-width = "2" fill = "green" />    <line x1="415" y1="207" x2="415" y2="150" style="stroke:green;stroke-width:2" />
+    <line x1="415" y1="150" x2="358" y2="150" style="stroke:green;stroke-width:2" />
+    <line x1="358" y1="150" x2="358" y2="207" style="stroke:green;stroke-width:2" />
+    <line x1="358" y1="207" x2="415" y2="207" style="stroke:green;stroke-width:2" />
+	<path d = "M400 193 L400 164 L372 164 L372 193 L400 193 Z" stroke = "blue" stroke-width = "2" fill = "blue" />    <line x1="472" y1="207" x2="472" y2="150" style="stroke:blue;stroke-width:2" />
+    <line x1="472" y1="150" x2="415" y2="150" style="stroke:blue;stroke-width:2" />
+    <line x1="415" y1="150" x2="415" y2="207" style="stroke:blue;stroke-width:2" />
+    <line x1="415" y1="207" x2="472" y2="207" style="stroke:blue;stroke-width:2" />
+	<path d = "M458 193 L458 164 L429 164 L429 193 L458 193 Z" stroke = "purple" stroke-width = "2" fill = "purple" />    <line x1="72" y1="265" x2="72" y2="207" style="stroke:black;stroke-width:2" />
+    <line x1="72" y1="207" x2="14" y2="207" style="stroke:black;stroke-width:2" />
+    <line x1="14" y1="207" x2="14" y2="265" style="stroke:black;stroke-width:2" />
+    <line x1="14" y1="265" x2="72" y2="265" style="stroke:black;stroke-width:2" />
+    <line x1="50" y1="250" x2="50" y2="236" style="stroke:black;stroke-width:2" />
+    <line x1="50" y1="250" x2="36" y2="250" style="stroke:black;stroke-width:2" />
+    <line x1="36" y1="250" x2="36" y2="236" style="stroke:black;stroke-width:2" />
+    <line x1="36" y1="236" x2="29" y2="236" style="stroke:black;stroke-width:2" />
+    <line x1="29" y1="236" x2="43" y2="222" style="stroke:black;stroke-width:2" />
+    <line x1="43" y1="222" x2="57" y2="236" style="stroke:black;stroke-width:2" />
+    <line x1="57" y1="236" x2="50" y2="236" style="stroke:black;stroke-width:2" />
+    <line x1="129" y1="265" x2="129" y2="207" style="stroke:black;stroke-width:2" />
+    <line x1="129" y1="207" x2="72" y2="207" style="stroke:black;stroke-width:2" />
+    <line x1="72" y1="207" x2="72" y2="265" style="stroke:black;stroke-width:2" />
+    <line x1="72" y1="265" x2="129" y2="265" style="stroke:black;stroke-width:2" />
+    <line x1="93" y1="222" x2="93" y2="236" style="stroke:black;stroke-width:2" />
+    <line x1="93" y1="222" x2="107" y2="222" style="stroke:black;stroke-width:2" />
+    <line x1="107" y1="222" x2="107" y2="236" style="stroke:black;stroke-width:2" />
+    <line x1="107" y1="236" x2="114" y2="236" style="stroke:black;stroke-width:2" />
+    <line x1="114" y1="236" x2="100" y2="250" style="stroke:black;stroke-width:2" />
+    <line x1="100" y1="250" x2="86" y2="236" style="stroke:black;stroke-width:2" />
+    <line x1="86" y1="236" x2="93" y2="236" style="stroke:black;stroke-width:2" />
+    <line x1="186" y1="265" x2="186" y2="207" style="stroke:black;stroke-width:2" />
+    <line x1="186" y1="207" x2="129" y2="207" style="stroke:black;stroke-width:2" />
+    <line x1="129" y1="207" x2="129" y2="265" style="stroke:black;stroke-width:2" />
+    <line x1="129" y1="265" x2="186" y2="265" style="stroke:black;stroke-width:2" />
+    <line x1="172" y1="229" x2="157" y2="229" style="stroke:black;stroke-width:2" />
+    <line x1="172" y1="229" x2="172" y2="243" style="stroke:black;stroke-width:2" />
+    <line x1="172" y1="243" x2="157" y2="243" style="stroke:black;stroke-width:2" />
+    <line x1="157" y1="243" x2="157" y2="250" style="stroke:black;stroke-width:2" />
+    <line x1="157" y1="250" x2="143" y2="236" style="stroke:black;stroke-width:2" />
+    <line x1="143" y1="236" x2="157" y2="222" style="stroke:black;stroke-width:2" />
+    <line x1="157" y1="222" x2="157" y2="229" style="stroke:black;stroke-width:2" />
+    <line x1="243" y1="265" x2="243" y2="207" style="stroke:black;stroke-width:2" />
+    <line x1="243" y1="207" x2="186" y2="207" style="stroke:black;stroke-width:2" />
+    <line x1="186" y1="207" x2="186" y2="265" style="stroke:black;stroke-width:2" />
+    <line x1="186" y1="265" x2="243" y2="265" style="stroke:black;stroke-width:2" />
+    <line x1="200" y1="243" x2="215" y2="243" style="stroke:black;stroke-width:2" />
+    <line x1="200" y1="243" x2="200" y2="229" style="stroke:black;stroke-width:2" />
+    <line x1="200" y1="229" x2="215" y2="229" style="stroke:black;stroke-width:2" />
+    <line x1="215" y1="229" x2="215" y2="222" style="stroke:black;stroke-width:2" />
+    <line x1="215" y1="222" x2="229" y2="236" style="stroke:black;stroke-width:2" />
+    <line x1="229" y1="236" x2="215" y2="250" style="stroke:black;stroke-width:2" />
+    <line x1="215" y1="250" x2="215" y2="243" style="stroke:black;stroke-width:2" />
+    <line x1="300" y1="265" x2="300" y2="207" style="stroke:black;stroke-width:2" />
+    <line x1="300" y1="207" x2="243" y2="207" style="stroke:black;stroke-width:2" />
+    <line x1="243" y1="207" x2="243" y2="265" style="stroke:black;stroke-width:2" />
+    <line x1="243" y1="265" x2="300" y2="265" style="stroke:black;stroke-width:2" />
+  <path d="M261.61645390869904 225.8072434860524           A14.301535070442103 14.301535070442103 0 0 1 281.8418787680727 225.80724348605912" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M261.6164539086923 246.03266834542603           A14.301535070442103 14.301535070442103 0 0 1 261.61645390869904 225.8072434860524" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M281.8418787680659 246.03266834543297           A14.301535070442103 14.301535070442103 0 0 1 261.6164539086923 246.03266834542603" fill = "none" stroke = "black" stroke-width = "2" />
+    <line x1="272" y1="236" x2="282" y2="246" style="stroke:black;stroke-width:2" />
+    <line x1="272" y1="257" x2="282" y2="247" style="stroke:black;stroke-width:2" />
+    <line x1="358" y1="265" x2="358" y2="207" style="stroke:black;stroke-width:2" />
+    <line x1="358" y1="207" x2="300" y2="207" style="stroke:black;stroke-width:2" />
+    <line x1="300" y1="207" x2="300" y2="265" style="stroke:black;stroke-width:2" />
+    <line x1="300" y1="265" x2="358" y2="265" style="stroke:black;stroke-width:2" />
+  <path d="M318.82259419046824 225.8072434860716           A14.301535070442103 14.301535070442103 0 0 1 339.04801904984186 225.80724348607916" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M318.82259419046056 246.03266834544522           A14.301535070442103 14.301535070442103 0 0 1 318.82259419046824 225.8072434860716" fill = "none" stroke = "black" stroke-width = "2" />
+  <path d="M339.0480190498342 246.032668345453           A14.301535070442103 14.301535070442103 0 0 1 318.82259419046056 246.03266834544522" fill = "none" stroke = "black" stroke-width = "2" />
+    <line x1="329" y1="236" x2="339" y2="226" style="stroke:black;stroke-width:2" />
+    <line x1="329" y1="214" x2="339" y2="225" style="stroke:black;stroke-width:2" />
+    <line x1="415" y1="265" x2="415" y2="207" style="stroke:black;stroke-width:2" />
+    <line x1="415" y1="207" x2="358" y2="207" style="stroke:black;stroke-width:2" />
+    <line x1="358" y1="207" x2="358" y2="265" style="stroke:black;stroke-width:2" />
+    <line x1="358" y1="265" x2="415" y2="265" style="stroke:black;stroke-width:2" />
+    <line x1="400" y1="236" x2="372" y2="236" style="stroke:black;stroke-width:2" />
+    <line x1="472" y1="265" x2="472" y2="207" style="stroke:black;stroke-width:2" />
+    <line x1="472" y1="207" x2="415" y2="207" style="stroke:black;stroke-width:2" />
+    <line x1="415" y1="207" x2="415" y2="265" style="stroke:black;stroke-width:2" />
+    <line x1="415" y1="265" x2="472" y2="265" style="stroke:black;stroke-width:2" />
+    <line x1="443" y1="236" x2="443" y2="222" style="stroke:black;stroke-width:2" />
+    <line x1="443" y1="236" x2="429" y2="236" style="stroke:black;stroke-width:2" />
+    <line x1="443" y1="236" x2="443" y2="250" style="stroke:black;stroke-width:2" />
+    <line x1="443" y1="236" x2="458" y2="236" style="stroke:black;stroke-width:2" />
+    <line x1="72" y1="322" x2="72" y2="265" style="stroke:black;stroke-width:2" />
+    <line x1="72" y1="265" x2="14" y2="265" style="stroke:black;stroke-width:2" />
+    <line x1="14" y1="265" x2="14" y2="322" style="stroke:black;stroke-width:2" />
+    <line x1="14" y1="322" x2="72" y2="322" style="stroke:black;stroke-width:2" />
+<circle cx="43" cy = "293" r = "3" stroke = "black" stroke-width = "2" fill = "black" />
+    <line x1="129" y1="322" x2="129" y2="265" style="stroke:black;stroke-width:2" />
+    <line x1="129" y1="265" x2="72" y2="265" style="stroke:black;stroke-width:2" />
+    <line x1="72" y1="265" x2="72" y2="322" style="stroke:black;stroke-width:2" />
+    <line x1="72" y1="322" x2="129" y2="322" style="stroke:black;stroke-width:2" />
+    <circle cx="100" cy = "293" r = "28.603070140884206" stroke = "black" stroke-width = "2" fill = "none" />
+<circle cx="100" cy = "293" r = "3" stroke = "black" stroke-width = "2" fill = "black" />
+    <line x1="186" y1="322" x2="186" y2="265" style="stroke:black;stroke-width:2" />
+    <line x1="186" y1="265" x2="129" y2="265" style="stroke:black;stroke-width:2" />
+    <line x1="129" y1="265" x2="129" y2="322" style="stroke:black;stroke-width:2" />
+    <line x1="129" y1="322" x2="186" y2="322" style="stroke:black;stroke-width:2" />
+    <line x1="157" y1="293" x2="143" y2="293" style="stroke:black;stroke-width:2" />
+<circle cx="143" cy = "293" r = "3" stroke = "black" stroke-width = "2" fill = "black" />
+    <line x1="157" y1="293" x2="172" y2="293" style="stroke:black;stroke-width:2" />
+<circle cx="172" cy = "293" r = "3" stroke = "black" stroke-width = "2" fill = "black" />
+    <line x1="243" y1="322" x2="243" y2="265" style="stroke:black;stroke-width:2" />
+    <line x1="243" y1="265" x2="186" y2="265" style="stroke:black;stroke-width:2" />
+    <line x1="186" y1="265" x2="186" y2="322" style="stroke:black;stroke-width:2" />
+    <line x1="186" y1="322" x2="243" y2="322" style="stroke:black;stroke-width:2" />
+  <path d="M194.29760119722735 272.9006713380921           A28.603070140884206 28.603070140884206 0 0 1 234.7484509159746 272.90067133811334" fill = "none" stroke = "black" stroke-width = "2" />
+    <line x1="215" y1="293" x2="235" y2="273" style="stroke:black;stroke-width:2" />
+    <line x1="215" y1="293" x2="194" y2="273" style="stroke:black;stroke-width:2" />
+<circle cx="215" cy = "293" r = "3" stroke = "black" stroke-width = "2" fill = "black" />
+    <line x1="300" y1="322" x2="300" y2="265" style="stroke:black;stroke-width:2" />
+    <line x1="300" y1="265" x2="243" y2="265" style="stroke:black;stroke-width:2" />
+    <line x1="243" y1="265" x2="243" y2="322" style="stroke:black;stroke-width:2" />
+    <line x1="243" y1="322" x2="300" y2="322" style="stroke:black;stroke-width:2" />
+<circle cx="257" cy = "293" r = "3" stroke = "black" stroke-width = "2" fill = "black" />
+    <line x1="257" y1="293" x2="286" y2="293" style="stroke:black;stroke-width:2" />
+<circle cx="286" cy = "293" r = "3" stroke = "black" stroke-width = "2" fill = "black" />
+    <line x1="243" y1="322" x2="253" y2="312" style="stroke:black;stroke-width:2" />
+    <line x1="257" y1="322" x2="268" y2="312" style="stroke:black;stroke-width:2" />
+    <line x1="272" y1="322" x2="282" y2="312" style="stroke:black;stroke-width:2" />
+    <line x1="286" y1="322" x2="296" y2="312" style="stroke:black;stroke-width:2" />
+    <line x1="300" y1="322" x2="310" y2="312" style="stroke:black;stroke-width:2" />
+    <line x1="315" y1="322" x2="325" y2="312" style="stroke:black;stroke-width:2" />
+    <line x1="329" y1="322" x2="339" y2="312" style="stroke:black;stroke-width:2" />
+    <line x1="343" y1="322" x2="353" y2="312" style="stroke:black;stroke-width:2" />
+    <line x1="358" y1="322" x2="358" y2="265" style="stroke:black;stroke-width:2" />
+    <line x1="358" y1="265" x2="300" y2="265" style="stroke:black;stroke-width:2" />
+    <line x1="300" y1="265" x2="300" y2="322" style="stroke:black;stroke-width:2" />
+    <line x1="300" y1="322" x2="358" y2="322" style="stroke:black;stroke-width:2" />
+  <path d="M300.3322364792268 321.7291663384037           A57.20614028176841 57.20614028176841 0 0 1 357.5383767610278 264.52302605666813" fill = "none" stroke = "black" stroke-width = "2" />
+    <line x1="358" y1="322" x2="368" y2="312" style="stroke:black;stroke-width:2" />
+    <line x1="372" y1="322" x2="382" y2="312" style="stroke:black;stroke-width:2" />
+    <line x1="386" y1="322" x2="396" y2="312" style="stroke:black;stroke-width:2" />
+    <line x1="400" y1="322" x2="411" y2="312" style="stroke:black;stroke-width:2" />
+    <line x1="415" y1="322" x2="415" y2="265" style="stroke:black;stroke-width:2" />
+    <line x1="415" y1="265" x2="358" y2="265" style="stroke:black;stroke-width:2" />
+    <line x1="358" y1="265" x2="358" y2="322" style="stroke:black;stroke-width:2" />
+    <line x1="358" y1="322" x2="415" y2="322" style="stroke:black;stroke-width:2" />
+  <path d="M357.53837676102853 264.52302605666694           A57.20614028176841 57.20614028176841 0 0 1 414.74451704276316 321.7291663384688" fill = "none" stroke = "black" stroke-width = "2" />
+    <line x1="472" y1="322" x2="472" y2="265" style="stroke:black;stroke-width:2" />
+    <line x1="472" y1="265" x2="415" y2="265" style="stroke:black;stroke-width:2" />
+    <line x1="415" y1="265" x2="415" y2="322" style="stroke:black;stroke-width:2" />
+    <line x1="415" y1="322" x2="472" y2="322" style="stroke:black;stroke-width:2" />
+    <circle cx="443" cy = "293" r = "14.301535070442103" stroke = "black" stroke-width = "2" fill = "black" />
+    <line x1="72" y1="379" x2="72" y2="322" style="stroke:black;stroke-width:2" />
+    <line x1="72" y1="322" x2="14" y2="322" style="stroke:black;stroke-width:2" />
+    <line x1="14" y1="322" x2="14" y2="379" style="stroke:black;stroke-width:2" />
+    <line x1="14" y1="379" x2="72" y2="379" style="stroke:black;stroke-width:2" />
+    <line x1="43" y1="350" x2="63" y2="330" style="stroke:black;stroke-width:2" />
+    <line x1="43" y1="350" x2="63" y2="371" style="stroke:black;stroke-width:2" />
+    <line x1="43" y1="350" x2="50" y2="350" style="stroke:black;stroke-width:2" />
+    <line x1="57" y1="350" x2="64" y2="350" style="stroke:black;stroke-width:2" />
+    <line x1="129" y1="379" x2="129" y2="322" style="stroke:black;stroke-width:2" />
+    <line x1="129" y1="322" x2="72" y2="322" style="stroke:black;stroke-width:2" />
+    <line x1="72" y1="322" x2="72" y2="379" style="stroke:black;stroke-width:2" />
+    <line x1="72" y1="379" x2="129" y2="379" style="stroke:black;stroke-width:2" />
+    <line x1="100" y1="350" x2="105" y2="345" style="stroke:black;stroke-width:2" />
+    <line x1="110" y1="340" x2="115" y2="335" style="stroke:black;stroke-width:2" />
+    <line x1="120" y1="330" x2="125" y2="325" style="stroke:black;stroke-width:2" />
+    <line x1="100" y1="350" x2="129" y2="350" style="stroke:black;stroke-width:2" />
+    <line x1="100" y1="350" x2="120" y2="371" style="stroke:black;stroke-width:2" />
+    <line x1="186" y1="379" x2="186" y2="322" style="stroke:black;stroke-width:2" />
+    <line x1="186" y1="322" x2="129" y2="322" style="stroke:black;stroke-width:2" />
+    <line x1="129" y1="322" x2="129" y2="379" style="stroke:black;stroke-width:2" />
+    <line x1="129" y1="379" x2="186" y2="379" style="stroke:black;stroke-width:2" />
+    <line x1="157" y1="350" x2="178" y2="330" style="stroke:black;stroke-width:2" />
+    <line x1="157" y1="350" x2="164" y2="348" style="stroke:black;stroke-width:2" />
+    <line x1="171" y1="347" x2="178" y2="345" style="stroke:black;stroke-width:2" />
+    <line x1="157" y1="350" x2="164" y2="352" style="stroke:black;stroke-width:2" />
+    <line x1="171" y1="354" x2="178" y2="356" style="stroke:black;stroke-width:2" />
+    <line x1="157" y1="350" x2="178" y2="371" style="stroke:black;stroke-width:2" />
+    <line x1="243" y1="379" x2="243" y2="322" style="stroke:black;stroke-width:2" />
+    <line x1="243" y1="322" x2="186" y2="322" style="stroke:black;stroke-width:2" />
+    <line x1="186" y1="322" x2="186" y2="379" style="stroke:black;stroke-width:2" />
+    <line x1="186" y1="379" x2="243" y2="379" style="stroke:black;stroke-width:2" />
+    <line x1="215" y1="350" x2="242" y2="343" style="stroke:black;stroke-width:2" />
+    <line x1="215" y1="350" x2="242" y2="358" style="stroke:black;stroke-width:2" />
+    <line x1="215" y1="350" x2="220" y2="355" style="stroke:black;stroke-width:2" />
+    <line x1="225" y1="360" x2="230" y2="366" style="stroke:black;stroke-width:2" />
+    <line x1="215" y1="350" x2="220" y2="345" style="stroke:black;stroke-width:2" />
+    <line x1="225" y1="340" x2="230" y2="335" style="stroke:black;stroke-width:2" />
+    <line x1="186" y1="436" x2="186" y2="379" style="stroke:black;stroke-width:2" />
+    <line x1="186" y1="379" x2="129" y2="379" style="stroke:black;stroke-width:2" />
+    <line x1="129" y1="379" x2="129" y2="436" style="stroke:black;stroke-width:2" />
+    <line x1="129" y1="436" x2="186" y2="436" style="stroke:black;stroke-width:2" />
+<circle cx="143" cy = "422" r = "3" stroke = "black" stroke-width = "2" fill = "black" />
+    <line x1="143" y1="422" x2="143" y2="408" style="stroke:black;stroke-width:2" />
+    <line x1="143" y1="408" x2="143" y2="393" style="stroke:black;stroke-width:2" />
+    <line x1="143" y1="393" x2="157" y2="393" style="stroke:black;stroke-width:2" />
+    <line x1="157" y1="393" x2="172" y2="393" style="stroke:black;stroke-width:2" />
+    <line x1="172" y1="393" x2="162" y2="383" style="stroke:black;stroke-width:2" />
+    <line x1="172" y1="393" x2="162" y2="403" style="stroke:black;stroke-width:2" />
+    <line x1="243" y1="436" x2="243" y2="379" style="stroke:black;stroke-width:2" />
+    <line x1="243" y1="379" x2="186" y2="379" style="stroke:black;stroke-width:2" />
+    <line x1="186" y1="379" x2="186" y2="436" style="stroke:black;stroke-width:2" />
+    <line x1="186" y1="436" x2="243" y2="436" style="stroke:black;stroke-width:2" />
+    <line x1="200" y1="393" x2="215" y2="393" style="stroke:black;stroke-width:2" />
+    <line x1="215" y1="393" x2="229" y2="393" style="stroke:black;stroke-width:2" />
+    <line x1="229" y1="393" x2="229" y2="408" style="stroke:black;stroke-width:2" />
+    <line x1="229" y1="408" x2="229" y2="422" style="stroke:black;stroke-width:2" />
+    <line x1="229" y1="422" x2="239" y2="412" style="stroke:black;stroke-width:2" />
+    <line x1="229" y1="422" x2="219" y2="412" style="stroke:black;stroke-width:2" />
+<circle cx="229" cy = "422" r = "3" stroke = "black" stroke-width = "2" fill = "black" />
+    <line x1="300" y1="436" x2="300" y2="379" style="stroke:black;stroke-width:2" />
+    <line x1="300" y1="379" x2="243" y2="379" style="stroke:black;stroke-width:2" />
+    <line x1="243" y1="379" x2="243" y2="436" style="stroke:black;stroke-width:2" />
+    <line x1="243" y1="436" x2="300" y2="436" style="stroke:black;stroke-width:2" />
+    <line x1="257" y1="393" x2="272" y2="393" style="stroke:black;stroke-width:2" />
+    <line x1="272" y1="393" x2="286" y2="393" style="stroke:black;stroke-width:2" />
+    <line x1="286" y1="393" x2="286" y2="408" style="stroke:black;stroke-width:2" />
+    <line x1="286" y1="408" x2="286" y2="422" style="stroke:black;stroke-width:2" />
+    <line x1="286" y1="422" x2="296" y2="412" style="stroke:black;stroke-width:2" />
+    <line x1="286" y1="422" x2="276" y2="412" style="stroke:black;stroke-width:2" />
+<circle cx="286" cy = "422" r = "3" stroke = "black" stroke-width = "2" fill = "black" />
+    <line x1="243" y1="436" x2="253" y2="426" style="stroke:black;stroke-width:2" />
+    <line x1="257" y1="436" x2="268" y2="426" style="stroke:black;stroke-width:2" />
+    <line x1="272" y1="436" x2="282" y2="426" style="stroke:black;stroke-width:2" />
+    <line x1="286" y1="436" x2="296" y2="426" style="stroke:black;stroke-width:2" />
+    <line x1="358" y1="436" x2="358" y2="379" style="stroke:black;stroke-width:2" />
+    <line x1="358" y1="379" x2="300" y2="379" style="stroke:black;stroke-width:2" />
+    <line x1="300" y1="379" x2="300" y2="436" style="stroke:black;stroke-width:2" />
+    <line x1="300" y1="436" x2="358" y2="436" style="stroke:black;stroke-width:2" />
+    <line x1="315" y1="422" x2="304" y2="395" style="stroke:black;stroke-width:2" />
+    <line x1="315" y1="422" x2="326" y2="395" style="stroke:black;stroke-width:2" />
+    <line x1="343" y1="422" x2="332" y2="395" style="stroke:black;stroke-width:2" />
+    <line x1="343" y1="422" x2="354" y2="395" style="stroke:black;stroke-width:2" />
+    <line x1="415" y1="436" x2="415" y2="379" style="stroke:black;stroke-width:2" />
+    <line x1="415" y1="379" x2="358" y2="379" style="stroke:black;stroke-width:2" />
+    <line x1="358" y1="379" x2="358" y2="436" style="stroke:black;stroke-width:2" />
+    <line x1="358" y1="436" x2="415" y2="436" style="stroke:black;stroke-width:2" />
+    <line x1="372" y1="422" x2="400" y2="422" style="stroke:black;stroke-width:2" />
+<circle cx="372" cy = "422" r = "3" stroke = "black" stroke-width = "2" fill = "black" />
+<path    d = "M372,422 C400,422 372,393 400,393" fill = "none" stroke-width = "2" stroke = "black" />    <line x1="472" y1="436" x2="472" y2="379" style="stroke:black;stroke-width:2" />
+    <line x1="472" y1="379" x2="415" y2="379" style="stroke:black;stroke-width:2" />
+    <line x1="415" y1="379" x2="415" y2="436" style="stroke:black;stroke-width:2" />
+    <line x1="415" y1="436" x2="472" y2="436" style="stroke:black;stroke-width:2" />
+<path    d = "M429,422 C458,422 429,393 458,393" fill = "none" stroke-width = "2" stroke = "black" /><circle cx="458" cy = "393" r = "3" stroke = "black" stroke-width = "2" fill = "black" />
+    <line x1="458" y1="393" x2="429" y2="393" style="stroke:black;stroke-width:2" />
+</svg>

@@ -199,7 +199,7 @@ https://raw.githubusercontent.com/LafeLabs/startdeck/master/hello/index.html
 0205:0362,0203,0335,0203,0203,0335,0203,0335,0203,0203,0335,0363,0336,0330,0333,0336,0331,0332,0337,0365,0336,0332,0331,0337,0337,
 0206:0336,0332,0337,0362,0203,0334,0336,0203,0335,0350,0335,0337,0310,0337,0203,0335,0335,0203,0335,0304,0335,0336,0313,0336,0203,0334,0337,0203,0363,0335,0335,0336,0332,0337,
 01206:0202,0200,0336,0332,0206,0333,0337,
-01366:0333,0200,0336,0336,0332,0332,0332,0330,0335,0337,0366,0340,0342,0330,0332,0335,0335,0367,0335,0336,0333,0330,0337,0337,0331
+01366:0333,0200,0336,0336,0332,0332,0332,0330,0335,0337,0342,0340,0366,0330,0332,0335,0335,0367,0335,0336,0333,0330,0337,0337,0331,
 01367:0333,0200,0336,0336,0332,0332,0332,0330,0335,0337,0366,0330,0332,0335,0335,0367,0335,0336,0340,0334,0337,0342,0336,0333,0330,0337,0337,0331,0335,0331,0336,0332,0337,
 01364:0304,0313,0333,0200,0336,0332,0330,0336,0330,0332,0335,0342,0330,0342,0330,0335,0342,0330,0342,0330,0334,0350,0334,0342,0334,0334,0342,0340,0335,0304,0331,0333,0337,0337,0332,0202,
 0220:0304,0313,0337,0340,0336,0336,0331,0331,0333,0330,0337,0332,0332,0201,0335,0201,0201,0201,0334,0336,0201,0335,0337,0350,0335,0310,0337,0201,0335,0335,0201,0335,0304,0335,0336,0313,0336,0201,0334,0337,0201,0201,0201,0335,0333,0333,0336,0330,0332,0337,
@@ -356,6 +356,19 @@ https://raw.githubusercontent.com/LafeLabs/startdeck/master/hello/index.html
 0241:0336,0330,0330,0330,0347,0337,
 01240:0333,0200,0336,0332,0240,0240,0333,0331,0331,0337,
 01241:0333,0200,0336,0332,0241,0241,0333,0331,0331,0331,0337,
+0132:0370,
+0130:0371,
+0103:0372,
+0126:0373,
+0102:0374,
+0116:0375,
+0115:0376,
+01370:0333,0200,0336,0336,0330,0331,0332,0330,0337,0200,0330,0332,0336,0336,0342,0334,0342,0335,0331,0331,0331,0333,0337,060,0365,0333,0333,0336,0333,0331,0331,0331,0337,0337,0337,
+01371:0333,0200,0336,0336,0330,0331,0332,0330,0337,0200,0330,0332,0336,0336,0342,0334,0342,0335,0331,0331,0331,0333,0337,061,0365,0333,0333,0336,0333,0331,0331,0331,0337,0337,0337,
+01372:0333,0200,0336,0336,0330,0331,0332,0330,0337,0200,0330,0332,0336,0336,0342,0334,0342,0335,0331,0331,0331,0333,0337,062,0365,0333,0333,0336,0333,0331,0331,0331,0337,0337,0337,
+01373:0333,0200,0336,0336,0330,0331,0332,0330,0337,0200,0330,0332,0336,0336,0342,0334,0342,0335,0331,0331,0331,0333,0337,063,0365,0333,0333,0336,0333,0331,0331,0331,0337,0337,0337,
+01374:0333,0200,0336,0336,0330,0331,0332,0330,0337,0200,0330,0332,0336,0336,0342,0334,0342,0335,0331,0331,0331,0333,0337,064,0365,0333,0333,0336,0333,0331,0331,0331,0337,0337,0337,
+01375:0333,0200,0336,0336,0330,0331,0332,0330,0337,0200,0330,0332,0336,0336,0342,0334,0342,0335,0331,0331,0331,0333,0337,065,0365,0333,0333,0336,0333,0331,0331,0331,0337,0337,0337,
 */
 </script>
 <!--<page02>-->
@@ -805,6 +818,7 @@ function doTheThing(localCommand){
     currentSVG += currentWord;
     currentSVG += "</text>\n";	
     currentWord = "";
+    currentHTML = "";
     //</page0365>
     }
     if(localCommand == 0366){//<page0366>
@@ -831,6 +845,66 @@ function doTheThing(localCommand){
     currentSVG += x2.toString() + "," + y2.toString() + "\" fill = \"none\" stroke-width = \"2\" stroke = \"" + currentStroke + "\" />";		
     //</page0367>
     }
+    if(localCommand == 0370){//<page0370>
+        boxes0630[0].innerHTML = currentHTML;
+        currentHTML = "";
+        data0430[0].onOff = 1;
+        data0430[0].w = side/unit;
+        data0430[0].left = (x - x0)/unit;
+        data0430[0].top = (y0 - y)/unit;
+
+    //</page0370>
+    }
+    if(localCommand == 0371){//<page0371>
+        boxes0630[1].innerHTML = currentHTML;
+        currentHTML = "";
+        data0430[1].onOff = 1;
+        data0430[1].w = side/unit;
+        data0430[1].left = (x - x0)/unit;
+        data0430[1].top = (y0 - y)/unit;
+    //</page0371>
+    }
+    if(localCommand == 0372){//<page0372>
+        boxes0630[2].innerHTML = currentHTML;
+        currentHTML = "";
+        data0430[2].onOff = 1;
+        data0430[2].w = side/unit;
+        data0430[2].left = (x - x0)/unit;
+        data0430[2].top = (y0 - y)/unit;
+
+    //</page0372>
+    }
+    if(localCommand == 0373){//<page0373>
+        boxes0630[3].innerHTML = currentHTML;
+        currentHTML = "";
+        data0430[3].onOff = 1;
+        data0430[3].w = side/unit;
+        data0430[3].left = (x - x0)/unit;
+        data0430[3].top = (y0 - y)/unit;
+
+    //</page0373>
+    }
+    if(localCommand == 0374){//<page0374>
+        boxes0630[4].innerHTML = currentHTML;
+        currentHTML = "";
+        data0430[4].onOff = 1;
+        data0430[4].w = side/unit;
+        data0430[4].left = (x - x0)/unit;
+        data0430[4].top = (y0 - y)/unit;
+
+    //</page0374>
+    }
+    if(localCommand == 0375){//<page0375>
+        boxes0630[5].innerHTML = currentHTML;
+        currentHTML = "";
+        data0430[5].onOff = 1;
+        data0430[5].w = side/unit;
+        data0430[5].left = (x - x0)/unit;
+        data0430[5].top = (y0 - y)/unit;
+
+    //</page0375>
+    }
+
     if(localCommand == 06){ //<page06>
     fullCube = false;
     currentTable = []; 
@@ -1064,8 +1138,77 @@ doTheThing(07);//initialize Geometron global variables
             <td>030</td><td>031</td><td>032</td><td>033</td><td>036</td><td>037</td>  
         </tr>
 </table>
-
 <!--</page03>-->             
+<!--<page0430>-->
+<div id = "data0430" style = "display:none">
+[
+    {
+        "w":1,
+        "h":1,
+        "fontSize":0.2,
+        "left":0,
+        "top":0,
+        "onOff":0
+    },
+    {
+        "w":1,
+        "h":1,
+        "fontSize":0.2,
+        "left":0,
+        "top":0,
+        "onOff":0
+    },
+    {
+        "w":1,
+        "h":1,
+        "fontSize":0.2,
+        "left":0,
+        "top":0,
+        "onOff":0
+    },
+    {
+        "w":1,
+        "h":1,
+        "fontSize":0.2,
+        "left":0,
+        "top":0,
+        "onOff":0
+    },
+    {
+        "w":1,
+        "h":1,
+        "fontSize":0.2,
+        "left":0,
+        "top":0,
+        "onOff":0
+    },
+    {
+        "w":1,
+        "h":1,
+        "fontSize":0.2,
+        "left":0,
+        "top":0,
+        "onOff":0
+    },
+    {
+        "w":1,
+        "h":1,
+        "fontSize":0.2,
+        "left":0,
+        "top":0,
+        "onOff":0
+    },
+    {
+        "w":1,
+        "h":1,
+        "fontSize":0.2,
+        "left":0,
+        "top":0,
+        "onOff":0
+    }
+]
+</div>
+<!--</page0430>-->
 <!--<page0630>-->
 <div class = "page screenpage" id = "div0630">
         <canvas id = "invisibleCanvas" style = "display:none"></canvas>
@@ -1134,6 +1277,14 @@ doTheThing(07);//initialize Geometron global variables
         </tr>    
     </table>
     <canvas id = "canvas0630" class = "canvas06xx"></canvas>
+    <div class = "box0630"></div>
+    <div class = "box0630"></div>
+    <div class = "box0630"></div>
+    <div class = "box0630"></div>
+    <div class = "box0630"></div>
+    <div class = "box0630"></div>
+    <div class = "box0630"></div>
+    <div class = "box0630"></div>    
     <textarea id = "textIO0630" class = "textIO06xx"></textarea>
     <img id = "img0630"/>
 </div>
@@ -1250,10 +1401,15 @@ function init0730(){
     currentAddress = 0250;
     unit = 100;
 
+    boxes0630 = document.getElementsByClassName("box0630");
+    data0430 = JSON.parse(document.getElementById("data0430").innerHTML);
+    for(var index = 0;index < data0430.length;index++){
+        data0430[index].onOff = 0;
+    }
+
 
     width0630 = innerWidth-50;
     height0630 = innerHeight-50;
-
     if(width0630 > 500){
         width0630 = 500;
     }
@@ -1296,9 +1452,18 @@ function init0730(){
                 currentTable[currentAddress] += glyphArray[index] + ",";
             }
         }
-
         inputs0630[0].value = "0" + currentAddress.toString(8);
-    
+        
+        for(var index = 0;index < data0430.length;index++){
+            if(data0430[index].onOff == 1){
+                boxes0630[index].style.left = (x0 + data0430[index].left*unit).toString() + "px";
+                boxes0630[index].style.top = (y0 - data0430[index].top*unit).toString() + "px";
+                boxes0630[index].style.width = (data0430[index].w*unit).toString() + "px";
+                boxes0630[index].style.fontSize = (data0430[index].fontSize*unit).toString() + "px";
+                boxes0630[index].style.height = (data0430[index].w*unit).toString() + "px";
+            }
+        }
+
     }
     inputs0630[1].onkeydown = function(e) {
         if(e.keyCode == 010){
@@ -1532,9 +1697,7 @@ function init0730(){
         inputs0630[7].value  = jsonin.imgw;        
         inputs0630[8].value  = jsonin.left;        
         inputs0630[9].value  = jsonin.top;        
-
         document.getElementById("img0630").src = jsonin.imgurl;
-
         redraw0730();
     }
 
@@ -1545,7 +1708,6 @@ function init0730(){
         httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         exportSVG();//put the text of the svg code in textio
         httpc.send("svg=" + document.getElementById("textIO0630").value);//send it along
-
     }        
 
 function exportSVG(){
@@ -1810,6 +1972,16 @@ table{
 <style>
 #img0630{
     position:absolute;
+}
+.box0630{
+    position:absolute;
+    z-index:2;
+    font-family:Futura;
+    border:solid;
+}
+.box0630 img{
+    width:50%;
+    z-index:-2;
 }
 </style>
 <!--</page0530>-->
